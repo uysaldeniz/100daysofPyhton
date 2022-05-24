@@ -1,0 +1,12 @@
+student_heights = input("Please give me the students heights:").split()
+total_heights= 0
+people=0
+
+for h in student_heights:
+  people+=1
+  total_heights += int(h)
+  
+av_heights= round(total_heights/people)
+
+print(f"Avg height is {av_heights}")
+
